@@ -1,7 +1,7 @@
 import streamlit as st
-import pyshortners as pyst
+import pyshorteners as pyst
 
-shortners = pyst.Shortner()
+shortners = pyst.Shortener()
 
 st.markdown("<h1 style='text-align: centre;'>URL Shortner</h1>", unsafe_allow_html=True)
 form=st.form("name")
