@@ -8,7 +8,7 @@ form=st.form("name")
 url=form.text_input("URL HERE")
 s_btn = form.form_submit_button("SHORT")
 if s_btn:
-  shorted_url = tinyurl.short(url)
+  shorted_url = shortners.tinyurl.short(url)
   st.text(shorted_url)
   
 
