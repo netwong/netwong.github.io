@@ -2,6 +2,8 @@ import streamlit as st
 import pyshorteners as pyst
 
 st.markdown("""
+
+<style>
 .css-1rs6os.edgvbvh3
 {
   visibility: hidden;
@@ -17,7 +19,7 @@ st.markdown("""
   visibility: hidden;
 }
 
-
+</style>
 """, unsafe_allow_html=True)
 
 
