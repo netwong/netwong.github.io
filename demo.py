@@ -4,6 +4,13 @@ from datetime import datetime
 currentTime = datetime.now()
 
 st.header("Demo page")
+st.markdown("---")
+
+st.title("Date Input")
+
+dateInput = st.date_input("Enter the event date")
+st.write(date_input)
+
 
 
 st.markdown("---")
