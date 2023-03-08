@@ -1,4 +1,7 @@
 import streamlit as st
 
 
-st.markdown("## Demo page")
+st.header("Demo page")
+st.markdwon("---")
+
+st.tltle("Uploading Files")
