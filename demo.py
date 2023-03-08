@@ -4,6 +4,14 @@ import streamlit as st
 st.header("Demo page")
 st.markdown("---")
 
+st.title("Slider")
+sliderValue = st.slider("This is a slider", min_value=1, max_value=5, step=1)
+st.text(sliderValue)
+
+
+
+
+st.markdown("---")
 st.title("Uploading Files")
 image = st.file_uploader("Please upload an image", type=["png", "jpg"])
 if image is not None:
