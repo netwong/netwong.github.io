@@ -4,6 +4,14 @@ from datetime import datetime
 currentTime = datetime.now()
 
 st.header("Demo page")
+
+st.markdown("---")
+textInput = st.text_input("Please input your favorite book name")
+st.write("The book you like most is ", textInput)
+
+
+
+
 st.markdown("---")
 
 st.title("Slider")
