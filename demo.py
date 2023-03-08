@@ -2,7 +2,7 @@ import streamlit as st
 
 
 st.header("Demo page")
-st.markdwon("---")
+st.markdown("---")
 
 st.title("Uploading Files")
 image = st.file_uploader("Please upload an image", type=["png", "jpg"])
