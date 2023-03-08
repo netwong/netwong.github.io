@@ -5,7 +5,11 @@ currentTime = datetime.now()
 
 st.header("Demo page")
 
+
 st.markdown("---")
+
+st.title("Text Input")
+
 textInput = st.text_input("Please input your favorite book name")
 st.write("The book you like most is ", textInput)
 
