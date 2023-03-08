@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime
-import time
+
 
 currentTime = datetime.now()
 
@@ -12,7 +12,7 @@ st.title("Progress bar")
 progressBar = st.progress(0)
 for i in range(10):
   progressBar.progress((i+1)*10)
-  time.sleep(1)
+
 
 
 
