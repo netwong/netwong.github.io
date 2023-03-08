@@ -11,7 +11,7 @@ sliderValue = st.slider("This is a slider", min_value=1, max_value=5, step=1)
 st.write(sliderValue)
 
 
-start_time = st.slider( "When do you start?", value=datetime(2023, 3, 8, 10, 30),, format="MM/DD/YY - hh:mm")
+start_time = st.slider( "When do you start?", value=datetime(2023, 3, 8, 10, 30), format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
 
 
