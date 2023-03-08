@@ -10,7 +10,7 @@ st.markdown("---")
 
 st.title("Text Input")
 
-textInput = st.text_input("Please input your favorite book name")
+textInput = st.text_input("Please input your favorite book name", max_chars=60)
 st.write("The book you like most is ", textInput)
 
 
