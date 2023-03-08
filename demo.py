@@ -1,5 +1,5 @@
 import streamlit as st
-
+from datetime import time
 
 st.header("Demo page")
 st.markdown("---")
@@ -8,10 +8,7 @@ st.title("Slider")
 sliderValue = st.slider("This is a slider", min_value=1, max_value=5, step=1)
 st.write(sliderValue)
 
-start_time = st.slider(
-    "When do you start?",
-    value=datetime(2020, 1, 1, 9, 30),
-    format="MM/DD/YY - hh:mm")
+start_time = st.slider( "When do you start?", value=datetime(2020, 1, 1, 9, 30), format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
 
 
