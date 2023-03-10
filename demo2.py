@@ -15,6 +15,6 @@ with st.form("Form 1"):
   year.text_input("Year")
   fState = st.form_submit_button('Submit')
   if fState:
-    if fName = "" and lName = "":
+    if fName == "" and lName == "":
       st.warning("Please fill above fields")
       
