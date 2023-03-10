@@ -12,6 +12,6 @@ with st.form("Form 1"):
   day, month, year = st.columns(3)
   day.text_input("Day")
   month.text_input("Month")
-  year.text_input("Year)
+  year.text_input("Year")
   st.form_submit_button('Submit')
   
