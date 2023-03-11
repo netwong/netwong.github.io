@@ -14,7 +14,7 @@ which one is the best?
 """)
 
 dataset_name = st.sidebar.selectbox("Select Dataset", ("Iris", "Brest Cancer", "Wine"))
-classifer_name = st.sidebar.selectbox("Select Classifier", ("KNN", "SVM", "Random Forest"))
+classifier_name = st.sidebar.selectbox("Select Classifier", ("KNN", "SVM", "Random Forest"))
 
 def get_dataset(dataset_name):
   if dataset_name == "Iris":
