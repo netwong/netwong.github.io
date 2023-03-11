@@ -56,10 +56,11 @@ def get_classifier(clf_name, params):
   elif clf_name == "SVM":
     clf = SVC(C=params["C"])  
   else:
-    max_depth = st.sidebar.slider("max_depth", 2, 15)
-    n_estimators = st.sidebar.slider("n_estimators", 1, 100)
+    #max_depth = st.sidebar.slider("max_depth", 2, 15)
+    #n_estimators = st.sidebar.slider("n_estimators", 1, 100)
     clf = RandomForestClassifier(n_estimators = params["n_estimators"], max_depth = params["max_depth"], random_state=1234)
-  return clf, params
+  
+  return clf
 
 clf = get_classifier(classifier_name, params)
                                  
