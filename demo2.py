@@ -2,7 +2,7 @@ import streamlit as st
 
 
 st.markdown("<h1 style='text-align:center'>User Registration</h1>", unsafe_allow_html=True)
-with st.form("Form 1"):
+with st.form("Form 1", clear_on_submit=True):
   col1, col2 = st.columns(2)
   fName = col1.text_input("First Name")
   lName = col2.text_input("Last Name")
