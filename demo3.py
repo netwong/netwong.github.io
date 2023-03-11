@@ -19,12 +19,12 @@ if opt == "Line":
   plt.plot(x, np.cos(x), '--')
   st.write(fig)
 elif opt == "Bar":
-  st.markdown("<h1 style='text-align:center;'>Bar Chart</h1>", unsafe_allow_html=True)
+  st.markdown("<h1 style='text-align:center'>Bar Chart</h1>", unsafe_allow_html=True)
   fig = plt.figure()
   plt.bar(bar_x, bar_x*10)
   st.write(fig)
 else:
-  st.markdown("<h1 style='text-align:center;'>H-Bar Chart</h1>", unsafe_allow_html=True)
+  st.markdown("<h1 style='text-align:center'>H-Bar Chart</h1>", unsafe_allow_html=True)
   fig = plt.figure()  
   plt.barh(bar_x*10, bar_x)
   st.write(fig)
