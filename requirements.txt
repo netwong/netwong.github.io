@@ -1,3 +1,4 @@
 pyshorteners
 datetime
 pandas
+matplotlib
