@@ -2,3 +2,4 @@ pyshorteners
 datetime
 pandas
 matplotlib
+numpy
