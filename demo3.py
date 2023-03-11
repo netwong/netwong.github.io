@@ -12,4 +12,5 @@ if opt == "Line":
   fig = plt.figure()
   plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pitayasmoothie-dark.mplstyle")
   plt.plot(x, np.sin(x))
+  plt.plot(x, np.cos(x), '--')
   st.write(fig)
