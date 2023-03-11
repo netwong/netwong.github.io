@@ -28,4 +28,12 @@ X, y = get_dataset(dataset_name)
 st.write("shape of dataset", X.shape)
 st.write("number of classes", len(np.unique(y)))
 
+def add_parameter_ui(clf_name):
+  params = dict()
+  if clf_name == "KNN":
+    K = st.sidebar.slider("K", 1, 15)
+    params["K"] = K
+   return params
+
+add_parameter_ui(classifer_name)
 
