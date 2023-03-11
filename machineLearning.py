@@ -1,5 +1,10 @@
 import streamlit as st
 from sklearn import datasets
+
+from sklearn.neighbors import KNeighborsClassifer
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifer
+
 import numpy as np
 st.title("Streamlit example")
 
@@ -42,7 +47,26 @@ def add_parameter_ui(clf_name):
     params["max_depth"] = max_depth
     params["n_estimators"] = n_estimators
   return params
-  
-
+ 
 add_parameter_ui(classifer_name)
+
+def get_classifier(clf_name, params):
+  if clf_name == "KNN":
+    clf = KNeighborsClassifer(n_neighbors = params["K"])
+  elif clf_name == "SVM":
+    clf = SVC(C=params["C"])  
+  else:
+    max_depth = st.sidebar.slider("max_depth", 2, 15)
+    n_estimators = st.sidebar.slider("n_estimators", 1, 100)
+    clf = RandomForestClassifier(n_estimators = params["n_estimators"], max_depth = params["max_depth"], random_state=1234]
+  return clf  
+
+clf = get_classifer(classfier_name, params)
+                                 
+
+
+
+
+
+
 
