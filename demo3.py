@@ -7,8 +7,9 @@ import numpy as np
 
 
 x = np.linspace(0,10,100)
-st.sidebar.write("Hello this is my side bar")
-
-fig = plt.figure()
-plt.plot(x, np.sin(x))
-st.write(fig)
+opt = st.sidebar.radio("Select any graph", options=("Line", "Bar", "H-Bar"))
+if opt == "Line"
+  fig = plt.figure()
+  plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pitayasmoothie-dark.mplstyle")
+  plt.plot(x, np.sin(x))
+  st.write(fig)
