@@ -1,9 +1,9 @@
 import streamlit as st
 from sklearn import datasets
 
-from sklearn.neighbors import KNeighborsClassifer
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifer
+from sklearn.ensemble import RandomForestClassifier
 
 import numpy as np
 st.title("Streamlit example")
@@ -48,11 +48,11 @@ def add_parameter_ui(clf_name):
     params["n_estimators"] = n_estimators
   return params
  
-add_parameter_ui(classifer_name)
+add_parameter_ui(classifier_name)
 
 def get_classifier(clf_name, params):
   if clf_name == "KNN":
-    clf = KNeighborsClassifer(n_neighbors = params["K"])
+    clf = KNeighborsClassifier(n_neighbors = params["K"])
   elif clf_name == "SVM":
     clf = SVC(C=params["C"])  
   else:
