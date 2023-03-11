@@ -17,4 +17,6 @@ with st.form("Form 1"):
   if fState:
     if fName == "" and lName == "":
       st.warning("Please fill above fields")
+    else:
+      st.success("Submitted Sucessfully")
       
