@@ -9,7 +9,7 @@ import numpy as np
 x = np.linspace(0,10,100)
 opt = st.sidebar.radio("Select any graph", options=("Line", "Bar", "H-Bar"))
 if opt == "Line":
-  st.markdown("<h1 style='text-align:center';>Line Chart</h1>")
+  st.markdown("<h1 style='text-align:center;'>Line Chart</h1>")
   fig = plt.figure()
   # plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pacoty.mplstyle")
   plt.plot(x, np.sin(x))
