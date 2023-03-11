@@ -33,7 +33,7 @@ def add_parameter_ui(clf_name):
   if clf_name == "KNN":
     K = st.sidebar.slider("K", 1, 15)
     params["K"] = K
-   return params
+  return params
 
 add_parameter_ui(classifer_name)
 
