@@ -50,17 +50,17 @@ def add_parameter_ui(clf_name):
  
 add_parameter_ui(classifier_name)
 
-def get_classifier(clf_name, params):
-  if clf_name == "KNN":
-    clf = KNeighborsClassifier(n_neighbors = params["K"])
-  elif clf_name == "SVM":
-    clf = SVC(C=params["C"])  
-  else:
-    clf = RandomForestClassifier(n_estimators = params["n_estimators"], max_depth = params["max_depth"], random_state=1234)
-  
-  return clf
+  def get_classifier(clf_name, params):
+    if clf_name == "KNN":
+      clf = KNeighborsClassifier(n_neighbors = params["K"])
+    elif clf_name == "SVM":
+      clf = SVC(C=params["C"])  
+    else:
+      clf = RandomForestClassifier(n_estimators = params["n_estimators"], max_depth = params["max_depth"], random_state=1234)
 
-clf = get_classifier(classifier_name, params)
+    return clf
+
+  clf = get_classifier(classifier_name, params)
                                  
 
 
