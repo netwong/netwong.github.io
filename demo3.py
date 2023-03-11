@@ -10,7 +10,7 @@ x = np.linspace(0,10,100)
 opt = st.sidebar.radio("Select any graph", options=("Line", "Bar", "H-Bar"))
 if opt == "Line":
   fig = plt.figure()
-  plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pacoty.mplstyle")
+  # plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pacoty.mplstyle")
   plt.plot(x, np.sin(x))
   plt.plot(x, np.cos(x), '--')
   st.write(fig)
