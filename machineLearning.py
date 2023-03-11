@@ -61,7 +61,7 @@ def get_classifier(clf_name, params):
     clf = RandomForestClassifier(n_estimators = params["n_estimators"], max_depth = params["max_depth"], random_state=1234)
   return clf  
 
-clf = get_classifer(classfier_name, params)
+clf = get_classifier(classfier_name, params)
                                  
 
 
