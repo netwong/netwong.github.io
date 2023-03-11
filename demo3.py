@@ -11,8 +11,7 @@ bar_x=np.array([1,2,3,4,5])
 
 opt = st.sidebar.radio("Select any graph", options=("Line", "Bar", "H-Bar"))
 if opt == "Line":
-  header = st.markdown("<h1 style='text-align:center'>Line Chart</h1>", unsafe_allow_html=True)
-  st.write(header)
+  st.write("<h1 style='text-align:center'>Line Chart</h1>", unsafe_allow_html=True)
   fig = plt.figure()
   # plt.style.use("https://github.com/dhaitz/matplotlib-stylesheets/blob/master/pacoty.mplstyle")
   plt.plot(x, np.sin(x))
