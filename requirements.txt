@@ -9,3 +9,4 @@ networkx
 openai
 streamlit
 streamlit-agraph
+pyvis
