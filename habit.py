@@ -10,7 +10,7 @@ selected_date = st.sidebar.date_input('Select date:')
 
 for habit in selected_habits:
     progress = st.sidebar.slider(f'{habit} progress:', min_value=0, max_value=100, value=50, step=1)
-    df = df.append({'Date':selected_date, 'Habit':habit, 'Progress':progress})
+    df = df.append({'Date':selected_date, 'Habit':habit, 'Progress':progress}, ignore_index=True)
 
 if st.sidebar.button('Save progress'):
     df.to_csv('progress.csv', index=False)
